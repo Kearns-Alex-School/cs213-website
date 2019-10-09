@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>CS 213 Week 06 Ponder and Prove</title>
+	<script type="text/javascript" src="week06.js"></script>
+	<style type="text/css">
+		form, pre {
+			margin-left: 20px;
+			font-family: Verdana, Geneva, sans-serif;
+			padding: 6px;
+			width: 550px;
+			font-size: 12;
+			border: 1px solid rgb(0, 90, 136);
+			border-radius: 4px;
+		}
+
+		h2 {
+			border-bottom-style: solid;
+		}
+	</style>
+</head>
+  
+<body>
+    <!-- First problem: Age -->
+	<h2>#1: Age</h2>
+    <p>Please indicate your age: 0-118 years</p>
+    <form action="" id="form1">
+ 			<div>
+				<input id="age1" size="3" onInput="checkAge('age1', 'age1message')"/>
+        <span id="age1message" style="color:red">Invalid age</span>
+			</div>
+			<div>
+				<input id="age2" size="3" onInput="checkAge('age2', 'age2message')"/>
+				<span id="age2message" style="color:red">Invalid age</span>
+      </div>
+    </form>
+    
+    <!-- Second problem: SSN -->
+	<h2>#2: SSN</h2>
+    <p>Please enter a Social Security Number: 000-00-0000</p>
+    <form action="" id="form2">
+      <div>
+        <input id="ssn1" size="11" onInput="checkSSN('ssn1', 'ssn1message')"/>
+        <span id="ssn1message" style="color:red">Invalid SSN</span>
+      </div>
+      <div>
+        <input id="ssn2" size="11" onInput="checkSSN('ssn2', 'ssn2message')"/>
+        <span id="ssn2message" style="color:red">Invalid SSN</span>
+      </div>
+    </form>
+    
+    <!-- Third problem: Credit Card Number -->
+	<h2>#3: Credit Card Number</h2>
+    <p>Please enter a credit card number: 0000 0000 0000 0000</p>
+    <form action="" id="form3">
+      <div>
+      	<input id="credit1" size="19" onInput="checkCreditCardNumber('credit1', 'credit1message')"/>
+        <span id="credit1message" style="color:red">Invalid credit card number</span>
+      </div>
+      <div>
+        <input id="credit2" size="19" onInput="checkCreditCardNumber('credit2', 'credit2message')"/>
+        <span id="credit2message" style="color:red">Invalid credit card number</span>
+      </div>
+    </form>
+    
+    <!-- Fourth problem: Date -->
+	<h2>#4: Date</h2>
+    <p>Please enter a date: m/d/yyyy</p>
+    <form action="" id="form4">
+      <div>
+             <input id="date1" size="9" onInput="checkDate('date1', 'date1message')"/>
+             <span id="date1message" style="color:red">Invalid date</span>
+      </div>
+      <div>
+             <input id="date2" size="9" onInput="checkDate('date2', 'date2message')"/>
+             <span id="date2message" style="color:red">Invalid date</span>
+      </div>
+    </form>
+    
+    <!-- Fifth problem: Abbreviation -->
+	<h2>#5: State Abbreviation</h2>
+    <p>Please enter a 2-letter state abbreviation</p>
+    <form action="" id="form5">
+      <div>
+              <input id="state1" size="2" onInput="checkStateAbbreviation('state1', 'state1message')" />
+              <span id="state1message" style="color:red">Invalid state abbreviation</span>
+      </div>
+      <div>
+              <input id="state2" size="2" onInput="checkStateAbbreviation('state2', 'state2message')" />
+              <span id="state2message" style="color:red">Invalid state abbreviation</span>
+	  </div>
+    </form>
+
+    <!-- Sixth problem: Money  -->
+	<h2>#6: Dollar Amount</h2>
+    <p>Please enter an amount in US dollars</p>
+    <form action="" id="form6">
+      <div>
+              <input id="amount1" size="10" onInput="checkDollarAmount('amount1', 'amount1message')"/>
+              <span id="amount1message" style="color:red">Invalid money amount</span>
+      </div>
+      <div>
+              <input id="amount2" size="10" onInput="checkDollarAmount('amount2', 'amount2message')"/>
+              <span id="amount2message" style="color:red">Invalid money amount</span>
+	  </div>
+    </form>
+  </body>
+
+</html>

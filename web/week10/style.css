@@ -1,0 +1,57 @@
+body {
+  background-color: dodgerblue;
+}
+
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+select {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+  height: 29px;
+  overflow: hidden;
+  width: 150px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 5px;
+  border-radius: 20px;
+  background-color: #0c5481;
+  color: #fff;
+}
+
+input[type=text] {
+	padding: 5px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #0c5481;
+  color: #fff;
+  font-size: 20px;
+}
+
+button[type=button] {
+  padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #0c5481;
+  color: #fff;
+  font-size: 20px;
+}
+
+table, th, td {
+  margin: 20px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: skyblue;
+}
+
+.right {
+  text-align: right;
+}

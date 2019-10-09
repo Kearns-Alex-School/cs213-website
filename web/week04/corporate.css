@@ -1,0 +1,156 @@
+/*Simple*/
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: black;
+}
+body {
+	background-color: #ffccd9;
+	font-size: 20px;
+	font-family: "Comic Sans MS";
+	text-align: center;
+	min-width: 910px;
+}
+input[type=text] {
+	width: 250px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: left;
+}
+textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-align: left;
+	resize: vertical;
+}
+label {
+	padding: 12px 0px 0px 0;
+	display: inline-block;
+}
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+/*Class*/
+.col-13 {
+	float: left;
+	width: 13%;
+	margin-top: 6px;
+}
+.col-87 {
+	float: left;
+	width:87%;
+	margin-top: 6px;
+}
+.column {
+  float: left;
+}
+	.column.left {
+		width: 110px;
+		margin-right: -110px;
+		min-width: 110px;
+	}
+	.column.right {
+		margin-left: 110px;
+		min-width: 800px;
+		margin-right: 5px;
+		font-size: 20px;
+		font-family: "Times New Roman";
+		text-align: left;
+		overflow-y: scroll;
+		height: 600px;
+	}
+		.column.right.h {
+			font-size: 90px;
+			color: cornflowerblue;
+			font-family: "Curlz MT";
+			border: initial;
+			overflow-y: initial;
+			height: 110px;
+			padding: 0px;
+			display: inline;
+		}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row.h {
+	padding: 5px;
+	background-color: #99ccff;
+}
+.footer {
+	margin-top: 5px;
+	background-color: #99ccff;
+	padding: 10px;
+	font-size: 15px;
+	text-align: center;
+}
+.button {
+	width: auto;
+	padding: 4px;
+	margin-right: 4px;
+	border: 4px groove cornflowerblue;
+	background-color: #ffb3c6;
+}
+	.button.side {
+		margin-bottom: 4px;
+		font-size: 12px;
+	}
+.quote {
+	margin: 10px;
+	border: 10px groove cornflowerblue;
+	background-color: #80c1ff;
+}
+	.quote.left {
+		font-size: 35px;
+		text-align: left;
+		padding-right: 50px;
+		padding-left: 10px;
+		font-family: 'Comic Sans MS';
+	}
+	.quote.center {
+		font-size: 45px;
+		text-align: center;
+		padding-left: 50px;
+		padding-right: 50px;
+		font-family: 'Curlz MT';
+	}
+	.quote.right {
+		font-size: 30px;
+		text-align: right;
+		padding-left: 50px;
+		padding-right: 10px;
+		font-family: 'Brush Script MT';
+	}
+.info {
+	border-radius: 15px;
+	background-color: #f2f2f2;
+	padding: 5px;
+	margin-right: 5px;
+}
+/*ID*/
+#image {
+	width: 100px;
+	height: 100px;
+}
+#subtitle {
+	font-size: 30px;
+}

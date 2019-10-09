@@ -1,0 +1,54 @@
+/*Simple*/
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: black;
+}
+p {
+  background-color: #FBE7E8;
+  color: black;
+}
+body {
+  background-color: pink;
+  font-size: 20px;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  overflow-y: scroll;
+}
+h2 {
+  font-size: 30px;
+  font-family: "Times New Roman";
+  text-align: left;
+}
+/*Class*/
+.header {
+  /*height: 112px;*/
+  color: cornflowerblue;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Curlz MT";
+}
+.topnav {
+  background-color: #ff8095;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.content {
+  font-size: 25px;
+  font-family: "Comic Sans MS";
+  text-align: left;
+}
+/*id*/
+#quote p {
+  padding: 20px;
+  border: 20px groove #ffffff;
+  width: auto;
+}
+a#button {
+  padding: 4px;
+  border: 4px groove #ffffff;
+  background-color: palevioletred;
+}
+#center {
+  margin: 50%px;
+}

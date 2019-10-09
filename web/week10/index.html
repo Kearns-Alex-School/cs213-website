@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CS 213 Ponder 10</title>
+  <link rel="StyleSheet" href="style.css" type="text/css"/>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+  <h1>Select a country to see cities and population!</h1>
+  <div id="country">
+    <select onchange="loadCountry(this.value)">
+      <option value="">Select One</option>
+      <option value="usa.txt">USA</option>
+      <option value="canada.txt">Canada</option>
+      <option value="mexico.txt">Mexico</option>
+      <option value="russia.txt">Russia</option>
+    </select>
+
+    <br/>
+
+    <table id="countryInfo"></table>
+  </div>
+
+  <h1>Type in a file name to load student information!</h1>
+  <div id="student">
+    <input type="text" id="fileName" ></input>
+    <button type="button" onclick="loadStudents(document.getElementById('fileName').value)">Retrive</button>
+
+    <br/>
+
+    <table id="studentInfo"></table>
+  </div>
+</body>
+</html>

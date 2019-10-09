@@ -1,0 +1,199 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	min-width: 900px;
+	background-color:dodgerblue; 
+}
+
+table {
+	width: 100%
+}
+
+td {
+	border-spacing: 10px;
+	height: 80px;
+}
+
+td.nav {
+	border-spacing: 10px;
+	height: auto;
+}
+
+table.review {
+	border-spacing: 0px;
+	height: auto;
+	width: auto;
+	background-color: lightblue;
+}
+
+table.review td {
+	border-spacing: 5px;
+	padding: 5px;
+	height: auto;
+	width: auto;
+}
+
+table.productreview {
+	border-spacing: 0px;
+	height: auto;
+	width: auto;
+	background-color: lightblue;
+}
+
+table.productreview th {
+	border-spacing: 5px;
+	padding: 5px;
+	text-align: left;
+	height: auto;
+}
+
+table.productreview td {
+	border-spacing: 5px;
+	padding: 5px;
+	height: auto;
+	width: auto;
+}
+
+.topnav {
+	margin-right: 10px;
+	margin-left: 10px;
+	height: 50px;
+	padding: 0px;
+}
+
+a#button {
+	padding: 4px;
+	border: 4px groove #ffffff;
+	background-color: Highlight;
+}
+
+input[type=text] {
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+.picture {
+	text-align: center;
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+}
+
+.product {
+	width: 60px;
+	height: 50px;
+}
+
+.description {
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+}
+
+.price {
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+}
+
+input[type=checkbox] {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+.number {
+	width: 20px;
+	display: inline-block;
+}
+
+.select, .qty {
+	text-align: center;
+	vertical-align: middle;
+	width: 40px;
+}
+
+.header {
+	height: auto;
+	text-align: center;
+	font-size: 35px;
+	font-family: "Curlz MT";
+}
+
+.content {
+	max-height: 280px;
+	overflow-y: scroll;
+}
+
+.column {
+	float: left;
+	padding: 10px;
+	height: 500px;
+	
+}
+
+	/* Left column */
+	.column.left {
+		background-color: lightsteelblue;
+		width: 65%;
+		max-height: 500px;
+	}
+
+	/* Right column */
+	.column.right {
+		background-color: lightcyan;
+		width: 35%;
+	}
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.customerInfo {
+	background-color: lightblue;
+	padding: 10px;
+	text-align: left;
+}
+
+.footer {
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+}
+
+/* Responsive layout - stacks the columns on top of each other instead of side-by-side */
+@media (max-width: 900px) {
+	.column.left, .column.right {
+		width: 100%;
+	}
+
+	input[type=text] {
+		width: 300px;
+	}
+}
+
+input[type=button], input[type=submit] {
+	width: 300px;
+	background-color: blue;
+	color: white;
+	padding: 14px 20px;
+	text-align: center;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+	input[type=button]:hover, input[type=submit]:hover {
+		background-color: mediumblue;
+	}

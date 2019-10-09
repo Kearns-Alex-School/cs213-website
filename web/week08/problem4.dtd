@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT ol (li+)>
+<!ATTLIST ol type (1|A|a|I|i) #REQUIRED>
+<!ELEMENT li (#PCDATA)>
+<!ATTLIST li value CDATA #IMPLIED>

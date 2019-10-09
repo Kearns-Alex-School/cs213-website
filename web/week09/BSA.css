@@ -1,0 +1,54 @@
+body {
+	background-color: #FFCC00;
+}
+
+/*main title*/
+h1 {
+	background-color: #003F87;
+	color: #CE1126;
+	text-align: center;
+	font-size: 50px;
+}
+
+/*council*/
+h2 {
+	color: #996633;
+	text-align: center;
+}
+
+/*troop*/
+h3 {
+	background-color: #FCD116;
+	color: #006B3F;
+	text-align: left;
+}
+
+table.maintable {
+	padding: 4px;
+	border-spacing: 0px;
+}
+
+td.border {
+	border-top: 1px solid #000000;
+	vertical-align: baseline;
+	padding: 5px;
+}
+
+table.subtable {
+	padding: 4px;
+	border-spacing: 0px;
+}
+
+table.subtable td,
+table.subtable th {
+	border: 1px solid #000000
+}
+
+tr.subhead {
+	background-color: orange;
+}
+
+td.wrap {
+    width:1%;
+    white-space:nowrap;
+}

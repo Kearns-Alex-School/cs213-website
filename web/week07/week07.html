@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Checkout</title>
+    <script type="text/javascript" src="week07.js"></script>
+    <link rel="StyleSheet" type="text/css" href="week07.css">
+  </head>
+	<body>
+		<div class="row">
+			<div class="header">
+				<h1>Candy Store</h1>
+			</div>
+		</div>
+		
+
+		<div class="topnav">
+			<table>
+				<tr>
+					<td class="nav"><p><a id="button" href="../">CS 213 Assignments</a></p></td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="row">
+			<div class="column left">
+				<p>
+					Welcome to my candy shop! We do not have much to select from at the moment but
+					please take a look and buy something! Your pruchase will fund us so we can add
+					more delicious candy to our site! 
+				</p>
+				<table>
+					<tr>
+						<th class="picture">Picture</th>
+						<th class="description">Description</th>
+						<th class="price">Price</th>
+						<th class="select">Select</th>
+						<th class="qty">Qty</th>
+					</tr>
+				</table>
+				<div class="content">
+					<table id="productTable">
+						<tr>
+							<td class="picture">
+								<img class="product" src="snickers.jpg" alt="snickers">
+							</td>
+							<td class="description">
+								Snickers
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check1" onclick="checkCheckbox('check1', 'qty1')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty1" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="milkyway.jpg" alt="milkyway">
+							</td>
+							<td class="description">
+								Milkyway
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check2" onclick="checkCheckbox('check2', 'qty2')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty2" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="3musketeers.jpg" alt="3musketeers">
+							</td>
+							<td class="description">
+								3Musketeers
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check3" onclick="checkCheckbox('check3', 'qty3')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty3" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="skittles.jpg" alt="skittles">
+							</td>
+							<td class="description">
+								Skittles
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check4" onclick="checkCheckbox('check4', 'qty4')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty4" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="mm.jpg" alt="M&M">
+							</td>
+							<td class="description">
+								M&M
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check5" onclick="checkCheckbox('check5', 'qty5')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty5" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="reesespieces.jpg" alt="reeses pieces">
+							</td>
+							<td class="description">
+								Reeses Pieces
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check6" onclick="checkCheckbox('check6', 'qty6')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty6" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="100grand.jpg" alt="100 grand">
+							</td>
+							<td class="description">
+								100 Grand
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check7" onclick="checkCheckbox('check7', 'qty7')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty7" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="starburst.png" alt="starburst">
+							</td>
+							<td class="description">
+								Starburst
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check8" onclick="checkCheckbox('check8', 'qty8')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty8" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="jollyrancher.jpg" alt="jolly rancher">
+							</td>
+							<td class="description">
+								Jolly Ranchers
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check9" onclick="checkCheckbox('check9', 'qty9')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty9" oninput="updateTotal()" />
+							</td>
+						</tr>
+						<tr>
+							<td class="picture">
+								<img class="product" src="mikeandike.jpg" alt="mike and ike">
+							</td>
+							<td class="description">
+								Mike N Ike
+							</td>
+							<td class="price">
+								$0.98
+							</td>
+							<td class="select">
+								<input type="checkbox" id="check10" onclick="checkCheckbox('check10', 'qty10')" />
+							</td>
+							<td class="qty">
+								<input class="number" disabled id="qty10" oninput="updateTotal()" />
+							</td>
+						</tr>
+					</table>
+				</div>
+				<p>
+					Disclaimer to the customer about how fake this website is...was I supposed to say
+					that??
+				</p>
+			</div>
+
+			<div class="column right">
+				<h1 id="total">Total $ 0.00</h1>
+
+				<div>
+					<input type="button" value="Purchase">
+					<input type="button" value="Reset" onclick="resetForm()">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="customerInfo">
+			<form action="" id="form1">
+				<table>
+					<tr>
+						<td>
+							<label for="fname">First Name</label>
+							<span id="fnamevalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="fname" size="3" onInput="checkName('fname', 'fnamevalid')" placeholder="First Name..." />
+						</td>
+						<td>
+							<label for="lname">Last Name</label>
+							<span id="lnamevalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="lname" size="3" onInput="checkName('lname', 'lnamevalid')" placeholder="Last Name..." />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="address">Address</label>
+							<span id="addressvalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="address" size="3" onInput="checkAddress('address', 'addressvalid')" placeholder="12345 road rd. City, ST 12345" />
+						</td>
+						<td>
+							<label for="phone">Phone</label>
+							<span id="phonevalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="phone" size="3" onInput="checkPhone('phone', 'phonevalid')" placeholder="123-456-7890" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="card">Card Number</label>
+							<span id="cardvalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="card" size="3" onInput="checkCreditCardNumber('card', 'cardvalid')" placeholder="0000 0000 0000 0000" />
+						</td>
+						<td>
+							<label for="date">Experation Date</label>
+							<span id="datevalid" style="color:red"> *</span>
+							<br />
+							<input style="width:300px" type="text" id="date" size="3" onInput="checkDate('date', 'datevalid')" placeholder="MM-YY" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<div class="footer">
+			Thank you for visiting my site. This is an assignment for one of my classes. I hope
+			you have had some fun thinking that you were actually going to be getting some candy.
+			Maybe one day you will!
+		</div>
+	</body>
+</html>

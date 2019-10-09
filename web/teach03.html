@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        /* #0 - Academic */
+        body {
+            background-color: #9BD770;
+            font-size: 12px;
+            font-family: "Times New Roman";
+            cursor: not-allowed;
+            -webkit-user-select: none; /* Safari 3.1+ */
+            -moz-user-select: none; /* Firefox 2+ */
+            -ms-user-select: none; /* IE 10+ */
+            user-select: none; /* Standard syntax */
+        }
+
+        #title {
+            color: #1B3409;
+        }
+
+        #text h1 {
+            text-align: left;
+            font-size: 100%;
+            font-variant: small-caps;
+        }
+
+        #title p {
+            color: #375F1B;
+            font-style: italic;
+        }
+
+        .content, #sidebar {
+            color: black;
+            background-color: #EBF7E3;
+        }
+
+        ul {
+            list-style-type: upper-roman;
+        }
+
+        h1 {
+            text-align: center;
+            font-variant: small-caps;
+        }
+
+        p {
+            text-indent: 1em;
+            max-width: 600px;
+        }
+
+        h3 {
+            font-style: italic;
+            font-size: 100%;
+            font-weight: normal;
+        }
+
+        #bottom {
+            color: #9BD770;
+            background-color: #1B3409;
+        }
+    </style>
+    <style>
+        /* #1 - Easy to Read */
+        body {
+            background-color: #AF2929;
+            font-size: 16px;
+            font-family: "Tahoma";
+        }
+
+        #title {
+            color: white;
+            background-color: #D13D3D;
+        }
+
+        .content {
+            color: black;
+            background-color: white;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        p {
+            text-indent: 2em;
+            max-width: 450px;
+        }
+
+        #sidebar {
+            color: #CCC;
+            background-color: black;
+        }
+
+        #bottom {
+            color: white;
+            background-color: #DB6464;
+        }
+    </style>
+    <style>
+        /* #2 - Programming Text Editor */
+        body {
+            background-color: #272822;
+            font-size: 12px;
+            font-family: Courier;
+            text-align: left;
+            overflow-y: scroll;
+        }
+
+        h1 {
+            background-color: #9BB9D8;
+            font-family: "Lucida Grande";
+            color: black;
+            font-size: 100%;
+            margin: 0px;
+        }
+
+        #title p {
+            background-color: #F5F6F7;
+            font-family: "Tahoma";
+            color: black;
+            margin: 0px;
+            max-width: 100%;
+        }
+
+        ul {
+            color: #E6DB74;
+            list-style-type: square;
+            list-style-position: inside;
+        }
+
+        p {
+            color: #22B14C;
+            margin-left: 5%;
+            max-width: 350px;
+        }
+
+        #text h1 {
+            background-color: #272822;
+            font-family: Courier;
+            color: #75715E;
+            margin-left: 0%;
+            font-size: 100%;
+        }
+
+        a {
+            color: #66D9EF;
+            text-decoration: none;
+        }
+
+        h3 {
+            color: #F92672;
+            margin-left: 0%;
+            font-weight: normal;
+            font-size: 100%;
+            font-family: Courier;
+        }
+
+        #bottom {
+            color: white;
+            background-color: #575757;
+        }
+    </style>
+    <style>
+        /* #3 The Unexpected*/
+        h1 {
+            text-align: center;
+            background-color: #9BB9D8;
+            color: cornflowerblue;
+            font-size: 45px;
+            font-family: "Curlz MT";
+        }
+
+        body {
+            background-color: pink;
+            font-size: 20px;
+            font-family: "Comic Sans MS";
+            text-align: center;
+            overflow-y: scroll;
+        }
+
+        p {
+            background-color: #FBE7E8;
+            color: black;
+        }
+
+        ul {
+            color: red;
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+        }
+
+        #sidebar h3 {
+            background-color: #9BB9D8;
+            color: #F92672;
+            outline-style: ridge;
+            outline-width: 2px;
+            outline-color: black;
+        }
+    </style>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Week 03 : CSS</title>
+</head>
+<body onload="disableStyles()">
+    <div class="document">
+        <div id="title">
+            <h1>Week 03 : CSS</h1>
+            <p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+        </div> <!-- title -->
+        <div class="content">
+            <div id="menuBar">
+                <ul id="menuBarList">
+                    <li class="menuBarItem" onclick="applyStyle(0)">Academic</li>
+                    <li class="menuBarItem" onclick="applyStyle(1)">Easy to Read</li>
+                    <li class="menuBarItem" onclick="applyStyle(2)">Programming Text Editor</li>
+                    <li class="menuBarItem" onclick="applyStyle(3)">The Unexpected</li>
+                    <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+                </ul>
+            </div> <!-- menuBar -->
+            <div id="text">
+                <h1>Select the Stylesheet</h1>
+                <p>
+                    There are four stylesheets that you may select from. Each one will change the coloring, fonts,
+                    and even the layout of the page.You can change the layout of this page by selecting different
+                    stylesheets in the menu, or by selecting one of the following links:<br>
+                    <a href="#" onclick="applyStyle(0)">Academic</a>,
+                    <a href="#" onclick="applyStyle(1)">Easy to Read</a>,
+                    <a href="#" onclick="applyStyle(2)">Programming Text Editor</a>,
+                    <a href="#" onclick="applyStyle(3)">The Unexpected</a>.
+                </p>
+                <h1>Instructions</h1>
+                <p>Academic by Daniel Van Orman</p>
+                <p>
+                    Formatted like a scholarly book or article. Titles appear similar to common
+                    formatting in academic texts - the main title is large and bold like a chapter
+                    title, headings (h3) are left-aligned, all caps, and bold like subtitles, and
+                    subheadings are italicized like minor sections. The monochromatic color scheme
+                    gives the website a more constant/predictable feel (not flashy or trying to
+                    grab attention) and the font size is small, but not too small. Copy protection
+                    and Roman numerals for lists contribute to an intellectual atmosphere.
+                </p>
+                <p>Easy to Read by Daniel Van Orman</p>
+                <p>
+                    Optimized for high readability. The font size is large enough to make text more
+                    visible but not too large as to create too much whitespace. The font family is
+                    one of the easiest to read and text width is limited to a vertical column to
+                    avoid strain and increase reading space by lessening how much one's eyes must
+                    shift horizontally. Text and background colors have a high contrast (black on
+                    white, white on red, etc.) to improve visibility. Text is left-aligned to reduce
+                    searching for text and to create a familiar pattern with a straight edge on one
+                    side (ex: reading center-aligned, with two non-straight edges, is more difficult
+                    than left-aligned).
+                </p>
+                <p>Programming Text Editor by Daniel Van Orman</p>
+                <p>
+                    Modeled after a basic text editor for programming languages. The main title is
+                    similar to the top of a window, except for its boldness (to help it stand out as
+                    a title) where as a file path would not be bold. Below it is the menu, where
+                    "File", "Edit", and other options would be. The text file begins with a list
+                    made to look like "#include" or "import" statements. Headings (h3) are comments,
+                    but not indented to improve visual appearance. General text is green, a
+                    stereotype for code, and subheadings and links are colored similarly to keywords.
+                    The bottom of the webpage looks like the bottom row of a text editor, which
+                    would normally have statistics and settings information.
+                </p>
+                <p>The Unexpected by Alex Kearns</p>
+                <p>
+                    Modeled after nothing really. As the title suggests, this is a style that does not
+                    fit in with the others and as such, should be unexpected. Even with such a dramatic
+                    change of style, color, and separation each of these individual elements come together
+                    in a beautiful style. Headings are colored banners with more urgent ones standing out
+                    more. With each paragraph tag grouped with its color paired with margins, this relatively
+                    simple combination is very popping to the eye while making it unexpected compared
+                    to the other styles. Sometimes, a change in setting can be nice, warm, and relaxing.
+                </p>
+            </div> <!-- text -->
+            <div id="sidebar">
+                <h3>Grading</h3>
+                <p>Reinaldo De Souza: Did not participate.</p>
+                <p>Kirk Fletcher: Did not participate.</p>
+                <p>
+                    Alex Kearns: Quality assurance - checked code, text, and layouts. Created and described
+                    one stylesheet.
+                </p>
+                <p>Daniel Van Orman: Created and described three stylesheets and added citations.</p>
+                <h3>Citations</h3>
+                <p><q>A Sophisticated Text Editor for Code, Markup and Prose.</q> <i>Sublime Text</i>, Sublime HQ Pty Ltd, 14 May 2018, www.sublimetext.com/. Accessed October 3, 2018.</p>
+                <p>Hall, Richard H. <q>Color Combinations and Readability.</q> <i>Richard H. Hall</i>, Missouri University Of Science And Technology, 2003, web.mst.edu/~rhall/web_design/color_readability.html. Accessed October 3, 2018.</p>
+                <p>Khan, R. A., et al. <i>Software Quality : Concepts and Practices</i>. Oxford : Alpha Science, c2006., 2006. <i>EBSCOhost</i>, byui.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&db=cat03146a&AN=BYUID.1138619&site=eds-live. Accessed September 29, 2018.</p>
+            </div> <!--sidebar -->
+        </div> <!-- content -->
+        <div id="bottom">Submit this assignment by Friday, October 5, 2018.</div>
+    </div> <!-- document -->
+    <script>
+      <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+      function disableStyles()
+      {
+        document.styleSheets[0].disabled = true;
+        document.styleSheets[1].disabled = true;
+        document.styleSheets[2].disabled = true;
+        document.styleSheets[3].disabled = true;
+      }
+      <!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+      function applyStyle(i)
+      {
+        disableStyles();
+        document.styleSheets[i].disabled = false;
+      }
+    </script>
+</body>
+</html>
